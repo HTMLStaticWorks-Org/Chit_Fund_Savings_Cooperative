@@ -1,0 +1,2 @@
+# Chit_Fund_Savings_Cooperative
+Automated website repository for Chit_Fund_Savings_Cooperative
