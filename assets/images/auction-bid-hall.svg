@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Authentic Indian Chit Fund Monthly Auction Bidding Hall with Tender Box and Auction Board">
+  <defs>
+    <linearGradient id="auctionWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F233C"/>
+      <stop offset="100%" stop-color="#142B47"/>
+    </linearGradient>
+    <linearGradient id="boardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B4332"/>
+      <stop offset="100%" stop-color="#0E281E"/>
+    </linearGradient>
+    <linearGradient id="podiumWood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5A3821"/>
+      <stop offset="50%" stop-color="#73472B"/>
+      <stop offset="100%" stop-color="#4E2E19"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hall Background -->
+  <rect width="800" height="520" fill="url(#auctionWall)"/>
+
+  <!-- Wall Wood Trim and Molding -->
+  <rect x="0" y="320" width="800" height="200" fill="#0A1828"/>
+  <rect x="0" y="316" width="800" height="6" fill="#B68D40"/>
+
+  <!-- Official Monthly Auction Board (Chit Group Schedule, Bids & Dividends) -->
+  <g transform="translate(180, 35)">
+    <rect x="0" y="0" width="440" height="230" rx="8" fill="url(#boardBg)" stroke="#B68D40" stroke-width="4"/>
+    <rect x="12" y="12" width="416" height="40" rx="4" fill="#0F233C" stroke="#B68D40" stroke-width="1.5"/>
+    <text x="220" y="38" fill="#DFC58E" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1">SAHAYOG CHIT COOPERATIVE — MONTHLY AUCTION TENDER</text>
+
+    <!-- Table Header on Blackboard -->
+    <rect x="20" y="64" width="400" height="26" fill="#25553F"/>
+    <text x="35" y="82" fill="#FAF7F2" font-family="sans-serif" font-size="11" font-weight="600">Ticket #</text>
+    <text x="110" y="82" fill="#FAF7F2" font-family="sans-serif" font-size="11" font-weight="600">Subscriber Name</text>
+    <text x="235" y="82" fill="#FAF7F2" font-family="sans-serif" font-size="11" font-weight="600">Bid Discount (%)</text>
+    <text x="345" y="82" fill="#FAF7F2" font-family="sans-serif" font-size="11" font-weight="600">Net Prize (INR)</text>
+
+    <!-- Row 1 -->
+    <rect x="20" y="94" width="400" height="26" fill="#1B4332"/>
+    <text x="35" y="112" fill="#DFC58E" font-family="monospace" font-size="12" font-weight="bold">#08</text>
+    <text x="110" y="112" fill="#FAF7F2" font-family="sans-serif" font-size="12">K. Ramesh Kumar</text>
+    <text x="245" y="112" fill="#DFC58E" font-family="monospace" font-size="12" font-weight="bold">18.5%</text>
+    <text x="345" y="112" fill="#FAF7F2" font-family="monospace" font-size="12">₹ 2,44,500</text>
+
+    <!-- Row 2 (Winning Bid - Highlighted in Gold Trim) -->
+    <rect x="20" y="124" width="400" height="28" fill="#2E6B4F" stroke="#DFC58E" stroke-width="1.5"/>
+    <text x="35" y="143" fill="#DFC58E" font-family="monospace" font-size="12" font-weight="bold">#14</text>
+    <text x="110" y="143" fill="#FAF7F2" font-family="sans-serif" font-size="12" font-weight="bold">S. Venkataraman (Prized)</text>
+    <text x="245" y="143" fill="#DFC58E" font-family="monospace" font-size="12" font-weight="bold">24.0% [CAP]</text>
+    <text x="345" y="143" fill="#FAF7F2" font-family="monospace" font-size="12" font-weight="bold">₹ 2,28,000</text>
+
+    <!-- Row 3 -->
+    <rect x="20" y="156" width="400" height="26" fill="#1B4332"/>
+    <text x="35" y="174" fill="#DFC58E" font-family="monospace" font-size="12" font-weight="bold">#21</text>
+    <text x="110" y="174" fill="#FAF7F2" font-family="sans-serif" font-size="12">M. Ananya &amp; Co.</text>
+    <text x="245" y="174" fill="#DFC58E" font-family="monospace" font-size="12">21.0%</text>
+    <text x="345" y="174" fill="#FAF7F2" font-family="monospace" font-size="12">₹ 2,37,000</text>
+
+    <!-- Dividend Banner at Bottom of Board -->
+    <rect x="20" y="188" width="400" height="30" rx="3" fill="#0F233C"/>
+    <text x="220" y="208" fill="#7CE0B3" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+      Equal Dividend Credited to 30 Members: ₹ 1,900 / member
+    </text>
+  </g>
+
+  <!-- Foreman Auction Podium (Center-Left) -->
+  <g transform="translate(80, 240)">
+    <rect x="0" y="0" width="130" height="220" rx="4" fill="url(#podiumWood)" stroke="#B68D40" stroke-width="2"/>
+    <rect x="-8" y="0" width="146" height="18" rx="4" fill="#B68D40"/>
+    <!-- Brass Emblem on Podium -->
+    <circle cx="65" cy="70" r="24" fill="#0F233C" stroke="#DFC58E" stroke-width="2"/>
+    <path d="M65 52l-12 5v10c0 8.5 5.5 15.5 12 17.5 6.5-2 12-9 12-17.5V57l-12-5z" fill="#1B4332" stroke="#DFC58E" stroke-width="1.5"/>
+    <path d="M60 67l4 4 7-7" fill="none" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Auction Gavel on Desk -->
+    <g transform="translate(30, -18)">
+      <rect x="10" y="0" width="30" height="14" rx="2" fill="#B68D40"/>
+      <rect x="22" y="14" width="6" height="34" rx="1" fill="#DFC58E"/>
+      <ellipse cx="25" cy="50" rx="14" ry="4" fill="#4B2E1B"/>
+    </g>
+  </g>
+
+  <!-- Transparent Sealed Auction Tender Box (Center-Right) -->
+  <g transform="translate(580, 260)">
+    <rect x="0" y="20" width="130" height="140" rx="6" fill="#DCE9E4" fill-opacity="0.25" stroke="#DFC58E" stroke-width="2.5"/>
+    <rect x="-6" y="14" width="142" height="14" rx="3" fill="#B68D40"/>
+    <!-- Slot on top -->
+    <rect x="40" y="18" width="50" height="4" rx="2" fill="#091728"/>
+    <!-- Folded Paper Tenders Inside -->
+    <polygon points="25,120 65,100 80,135 35,145" fill="#FAF7F2" stroke="#0F233C" stroke-width="1"/>
+    <polygon points="55,110 95,90 110,125 70,135" fill="#DFC58E" stroke="#0F233C" stroke-width="1"/>
+    <polygon points="40,80 80,70 95,95 50,105" fill="#FAF7F2" stroke="#0F233C" stroke-width="1"/>
+    <!-- Label -->
+    <rect x="15" y="140" width="100" height="16" rx="3" fill="#0F233C"/>
+    <text x="65" y="152" fill="#FAF7F2" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">OFFICIAL TENDER BOX</text>
+  </g>
+
+  <!-- Attending Cooperative Members (Silhouettes / Attire seated at tables) -->
+  <g transform="translate(230, 300)">
+    <!-- Member 1 -->
+    <g transform="translate(0, 40)">
+      <circle cx="35" cy="0" r="18" fill="#D39868"/>
+      <path d="M12 20c0-12 46-12 46 0v70H12V20z" fill="#1B4332"/>
+    </g>
+    <!-- Member 2 (Raising Hand to Bid) -->
+    <g transform="translate(90, 10)">
+      <circle cx="35" cy="0" r="18" fill="#C68B59"/>
+      <path d="M12 20c0-12 46-12 46 0v100H12V20z" fill="#223D60"/>
+      <!-- Raised Arm with Bid Card -->
+      <path d="M50 25l25-45 10 6-25 45z" fill="#223D60"/>
+      <rect x="70" y="-35" width="28" height="18" rx="2" fill="#FAF7F2" stroke="#0F233C" stroke-width="1.5"/>
+      <text x="84" y="-22" fill="#0F233C" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">#14</text>
+    </g>
+    <!-- Member 3 -->
+    <g transform="translate(180, 35)">
+      <circle cx="35" cy="0" r="18" fill="#D39868"/>
+      <path d="M12 20c0-12 46-12 46 0v75H12V20z" fill="#8C3B2B"/>
+    </g>
+    <!-- Member 4 -->
+    <g transform="translate(270, 45)">
+      <circle cx="35" cy="0" r="18" fill="#C68B59"/>
+      <path d="M12 20c0-12 46-12 46 0v65H12V20z" fill="#DED3BE"/>
+    </g>
+  </g>
+</svg>
+

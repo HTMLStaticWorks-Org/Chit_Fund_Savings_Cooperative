@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Diverse Cooperative Members and Community Financial Empowerment">
+  <defs>
+    <linearGradient id="commBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF7F2"/>
+      <stop offset="100%" stop-color="#EAE3D5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#commBg)"/>
+  <!-- Decorative Arch Background -->
+  <path d="M100 500V240C100 130 230 40 400 40s300 90 300 200v260H100z" fill="#E6EFEA" stroke="#B68D40" stroke-width="2"/>
+
+  <!-- Cooperative Society Pillar Emblem -->
+  <g transform="translate(360, 60)">
+    <circle cx="40" cy="40" r="36" fill="#0F233C" stroke="#B68D40" stroke-width="2.5"/>
+    <path d="M40 18l-20 8v16c0 13 9 24 20 27 11-3 20-14 20-27V26l-20-8z" fill="#1B4332" stroke="#DFC58E" stroke-width="2"/>
+    <path d="M33 42l5 5 10-10" fill="none" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Central Circular Table -->
+  <ellipse cx="400" cy="420" rx="340" ry="70" fill="#754A2E" stroke="#B68D40" stroke-width="3"/>
+  <ellipse cx="400" cy="415" rx="320" ry="60" fill="#5E3A24"/>
+
+  <!-- 4 Diverse Members Around Table -->
+  <!-- Person 1: Retail Shop Owner (Left) with ledger folder -->
+  <g transform="translate(140, 240)">
+    <circle cx="40" cy="45" r="28" fill="#D39868"/>
+    <path d="M12 40c0-26 56-26 56 0 0 10-15 15-28 15s-28-5-28-15z" fill="#1B1B1E"/>
+    <path d="M0 110c0-35 80-35 80 0v80H0v-80z" fill="#0F233C"/>
+    <polygon points="25,95 55,95 40,140" fill="#FAF7F2"/>
+    <polygon points="36,105 44,105 45,135 40,140 35,135" fill="#B68D40"/>
+    <!-- Scheme Passbook in hands -->
+    <rect x="50" y="115" width="45" height="30" rx="3" fill="#1B4332" stroke="#DFC58E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Person 2: Woman Entrepreneur / Artisan (Center Left) -->
+  <g transform="translate(290, 220)">
+    <circle cx="40" cy="45" r="27" fill="#C68B59"/>
+    <path d="M12 42c0-24 56-24 56 0 0 8-15 12-28 12s-28-4-28-12z" fill="#1B1B1E"/>
+    <circle cx="40" cy="36" r="2" fill="#8C2D19"/>
+    <path d="M0 105c0-32 80-32 80 0v95H0v-95z" fill="#B68D40"/>
+    <path d="M15 85l35 95 18-5-35-90z" fill="#1B4332"/>
+  </g>
+
+  <!-- Person 3: Cooperative Advisor / Officer (Center Right) -->
+  <g transform="translate(430, 210)">
+    <circle cx="40" cy="45" r="28" fill="#D39868"/>
+    <path d="M12 38c0-25 56-25 56 0 0 10-15 14-28 14s-28-4-28-14z" fill="#2E333D"/>
+    <!-- Spectacles -->
+    <rect x="22" y="40" width="14" height="9" rx="2" fill="none" stroke="#B68D40" stroke-width="1.5"/>
+    <rect x="44" y="40" width="14" height="9" rx="2" fill="none" stroke="#B68D40" stroke-width="1.5"/>
+    <line x1="36" y1="44" x2="44" y2="44" stroke="#B68D40" stroke-width="1.5"/>
+    <path d="M0 110c0-35 80-35 80 0v105H0v-105z" fill="#1B4332"/>
+    <polygon points="26,95 54,95 40,140" fill="#FAF7F2"/>
+    <polygon points="36,105 44,105 45,135 40,140 35,135" fill="#DFC58E"/>
+  </g>
+
+  <!-- Person 4: Retired Teacher / Senior Citizen (Right) -->
+  <g transform="translate(580, 240)">
+    <circle cx="40" cy="45" r="28" fill="#C68B59"/>
+    <path d="M12 40c0-25 56-25 56 0 0 8-15 12-28 12s-28-4-28-12z" fill="#7D8694"/>
+    <path d="M0 110c0-35 80-35 80 0v80H0v-80z" fill="#DED3BE" stroke="#B68D40" stroke-width="1.5"/>
+    <!-- Spectacles -->
+    <circle cx="30" cy="45" r="6" fill="none" stroke="#0F233C" stroke-width="1.5"/>
+    <circle cx="50" cy="45" r="6" fill="none" stroke="#0F233C" stroke-width="1.5"/>
+    <line x1="36" y1="45" x2="44" y2="45" stroke="#0F233C" stroke-width="1.5"/>
+  </g>
+
+  <!-- Documents & Passbooks on Table in Foreground -->
+  <g transform="translate(260, 395)">
+    <polygon points="0,15 120,5 135,30 15,40" fill="#FAF7F2" stroke="#0F233C" stroke-width="1.5"/>
+    <polygon points="120,5 240,18 225,44 135,30" fill="#F2ECE1" stroke="#0F233C" stroke-width="1.5"/>
+    <rect x="18" y="22" width="70" height="4" fill="#1B4332"/>
+    <rect x="18" y="30" width="50" height="3" fill="#B68D40"/>
+    <rect x="145" y="16" width="60" height="4" fill="#0F233C"/>
+  </g>
+</svg>
+

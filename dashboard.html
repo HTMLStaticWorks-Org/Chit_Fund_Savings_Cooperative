@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Dashboard | Sahayog Financial Cooperative</title>
+  <meta name="description"
+    content="Sahayog Financial Cooperative member portal for viewing contributions, auction schedules, passbook ledger, and financial statements." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/schemes-data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="dashboard-layout">
+    <!-- LEFT SIDE MENU FROM TOP TO BOTTOM WITH LOGOUT BUTTON -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar" aria-label="Member Dashboard Sidebar">
+      <div>
+        <!-- Sidebar Brand Header -->
+        <div class="dashboard-sidebar-header">
+          <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <a href="index.html" class="brand-logo" aria-label="Sahayog Cooperative Home">
+              <span class="brand-emblem" aria-hidden="true" style="width: 38px; height: 38px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </span>
+              <span class="brand-text">
+                <span class="brand-name" style="font-size: 1.15rem;">Sahayog Coop</span>
+                <span class="brand-tagline" style="font-size: 0.65rem;">Member Portal</span>
+              </span>
+            </a>
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose"
+              aria-label="Close sidebar menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Logged-in Member Profile Snippet -->
+        <div class="dashboard-user-card">
+          <div class="dashboard-user-avatar" aria-hidden="true">PS</div>
+          <div class="dashboard-user-info">
+            <strong>Priya Subramanian</strong>
+            <span>ID: SHG-MEM-8421</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="dashboard-nav-list" aria-label="Dashboard Sections">
+          <a href="#overview" class="dashboard-nav-link active" data-dash-tab="dashOverviewSection">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            <span>Overview &amp; Stats</span>
+          </a>
+          <a href="#contributions" class="dashboard-nav-link" data-dash-tab="dashContributionsSection">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+            <span>Contributions (4 Paid)</span>
+          </a>
+          <a href="#auctions" class="dashboard-nav-link" data-dash-tab="dashAuctionsSection">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            <span>Auction Schedules</span>
+          </a>
+          <a href="#statements" class="dashboard-nav-link" data-dash-tab="dashStatementsSection">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+            <span>Statements &amp; Ledger</span>
+          </a>
+          <a href="rules.html" class="dashboard-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+            <span>Scheme Bylaws</span>
+          </a>
+          <a href="contact.html" class="dashboard-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span>Help Desk &amp; Grievance</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Bottom of Sidebar: RTL/Theme Toggles & Logout Button -->
+      <div class="dashboard-sidebar-footer">
+        <!-- RTL and Theme Buttons in Side Menu -->
+        <div class="dashboard-sidebar-toggles">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL layout"
+            title="Toggle RTL layout">RTL</button>
+          <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle color theme">
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+        </div>
+        <a href="login.html" class="dashboard-logout-btn" title="Sign out of member portal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Sidebar Backdrop for Mobile/Tablet Drawer -->
+    <div class="dashboard-sidebar-backdrop" id="dashboardSidebarBackdrop"></div>
+
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <div class="dashboard-main">
+      <!-- Top Bar: Clean header with Hamburger menu on Mobile/Tablet/1024px; View Website, RTL, Theme, and Active Badge removed -->
+      <header class="dashboard-topbar">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <!-- Hamburger toggle button for Mobile/Tablet/1024px -->
+          <button type="button" class="dashboard-hamburger-btn" id="dashboardSidebarToggle" aria-expanded="false"
+            aria-controls="dashboardSidebar" aria-label="Toggle sidebar menu">
+            <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+          <div>
+            <h1 style="font-size: 1.25rem; margin-bottom: 2px;">Member Dashboard</h1>
+            <p style="font-size: 0.8125rem; color: var(--text-muted); margin: 0;">
+              Active Scheme: <strong>Sahayog Pragati 3 Lakh Group</strong> • Ticket #19
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Body Content -->
+      <div class="dashboard-content-body">
+        <!-- 4 Quick Financial KPI Cards (2 per row on tablet / 1024px) -->
+        <div class="dashboard-grid-cards">
+          <div class="dash-stat-card">
+            <span class="dash-stat-label">Total Subscriptions Paid</span>
+            <span class="dash-stat-val">₹ 35,450</span>
+            <span class="dash-stat-sub">4 of 30 Instalments Cleared</span>
+          </div>
+
+          <div class="dash-stat-card" style="border-top: 3px solid var(--brand-gold);">
+            <span class="dash-stat-label">Upcoming Month 5 Instalment</span>
+            <span class="dash-stat-val">₹ 8,250</span>
+            <span class="dash-stat-sub" style="color: var(--status-warning-text);">Due on: 15th Nov 2026</span>
+          </div>
+
+          <div class="dash-stat-card">
+            <span class="dash-stat-label">Auction Dividends Saved</span>
+            <span class="dash-stat-val">₹ 4,550</span>
+            <span class="dash-stat-sub">Direct Reduction from Gross</span>
+          </div>
+
+          <div class="dash-stat-card">
+            <span class="dash-stat-label">Prize Bidding Status</span>
+            <span class="dash-stat-val" style="font-size: 1.25rem;">Non-Prized</span>
+            <span class="dash-stat-sub" style="color: var(--status-success-text);">Eligible for Nov Tender</span>
+          </div>
+        </div>
+
+        <!-- TAB 1: OVERVIEW & ACTIVE SCHEME SUMMARY -->
+        <div class="dashboard-section-panel" id="dashOverviewSection">
+          <div
+            style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--space-5); margin-bottom: var(--space-6);"
+            class="features-grid-2">
+            <!-- Active Scheme Passbook Banner -->
+            <div class="form-card" style="border-left: 4px solid var(--brand-forest);">
+              <span class="scheme-category-tag" style="margin-bottom: 8px; display: inline-block;">Current Enrolled
+                Group</span>
+              <h2 style="font-size: 1.35rem; margin-bottom: 6px;">Sahayog Pragati 3 Lakh Group (SHG-DEMO-201)</h2>
+              <p style="font-size: 0.88rem; margin-bottom: 1rem;">
+                A 30-month disciplined savings scheme with a gross periodic pool of ₹3,00,000 pooled across 30 verified
+                members.
+              </p>
+              <div class="features-grid-3" style="gap: 12px; margin-bottom: 1rem;">
+                <div style="background: var(--bg-secondary); padding: 10px; border-radius: var(--radius-sm);">
+                  <span style="font-size: 0.72rem; color: var(--text-muted); display: block;">Chit Pool Value</span>
+                  <strong style="font-size: 1rem;">₹ 3,00,000</strong>
+                </div>
+                <div style="background: var(--bg-secondary); padding: 10px; border-radius: var(--radius-sm);">
+                  <span style="font-size: 0.72rem; color: var(--text-muted); display: block;">Gross Monthly</span>
+                  <strong style="font-size: 1rem;">₹ 10,000 / mo</strong>
+                </div>
+                <div style="background: var(--bg-secondary); padding: 10px; border-radius: var(--radius-sm);">
+                  <span style="font-size: 0.72rem; color: var(--text-muted); display: block;">Foreman Fee</span>
+                  <strong style="font-size: 1rem;">5% (₹ 15,000)</strong>
+                </div>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a href="#contributions" class="btn btn-primary btn-sm"
+                  onclick="document.querySelector('[data-dash-tab=\'dashContributionsSection\']').click();">View
+                  Contributions</a>
+                <a href="#auctions" class="btn btn-outline btn-sm"
+                  onclick="document.querySelector('[data-dash-tab=\'dashAuctionsSection\']').click();">Auction Tender
+                  Rules</a>
+              </div>
+            </div>
+
+            <!-- Passbook Visual / Notice -->
+            <div class="form-card">
+              <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Next Auction Notification</h3>
+              <p style="font-size: 0.88rem; margin-bottom: 1rem;">
+                <strong>Cycle Month 5 Auction:</strong> Scheduled for <strong>15th November 2026 at 2:30 PM IST</strong>
+                at the Sahayog Bhavan Boardroom.
+              </p>
+              <div
+                style="background: var(--status-warning-bg); color: var(--status-warning-text); border: 1px solid currentColor; padding: 10px 14px; border-radius: var(--radius-sm); font-size: 0.82rem; margin-bottom: 1rem;">
+                <strong>Payment Reminder:</strong> Submit your Month 5 net subscription of ₹8,250 by 12th November to
+                remain eligible to participate in the draw.
+              </div>
+              <img src="assets/images/passbook-ledger.svg" alt="Cooperative passbook ledger and stamp" width="800"
+                height="520" style="height: 140px; width: 100%; object-fit: cover; border-radius: var(--radius-sm);" />
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: CONTRIBUTIONS & SUBSCRIPTION HISTORY -->
+        <div class="dashboard-section-panel" id="dashContributionsSection" style="display: none;">
+          <div class="form-card" style="margin-bottom: var(--space-6);">
+            <div
+              style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <h2 style="font-size: 1.35rem; margin-bottom: 4px;">Monthly Contributions &amp; Payment History</h2>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Verified ledger entries for Ticket
+                  #19 (Pragati 3 Lakh Group)</p>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm" onclick="window.print();">Print Payment
+                History</button>
+            </div>
+
+            <div class="table-scroll-wrapper">
+              <table class="comparison-table" aria-label="Contributions History Table">
+                <thead>
+                  <tr>
+                    <th>Cycle</th>
+                    <th>Due Date</th>
+                    <th>Payment Date</th>
+                    <th>Receipt #</th>
+                    <th>Gross Instalment</th>
+                    <th>Auction Dividend</th>
+                    <th>Net Amount Paid</th>
+                    <th>Mode</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Month 01</strong></td>
+                    <td>15-Jul-2026</td>
+                    <td>12-Jul-2026</td>
+                    <td class="num-tabular">RCP-26-0841</td>
+                    <td class="num-tabular">₹ 10,000</td>
+                    <td class="num-tabular">— (1st Month)</td>
+                    <td class="num-tabular"><strong>₹ 10,000</strong></td>
+                    <td>Bank NEFT</td>
+                    <td><span class="scheme-category-tag"
+                        style="background: var(--status-success-bg); color: var(--status-success-text);">Verified</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Month 02</strong></td>
+                    <td>15-Aug-2026</td>
+                    <td>14-Aug-2026</td>
+                    <td class="num-tabular">RCP-26-1204</td>
+                    <td class="num-tabular">₹ 10,000</td>
+                    <td class="num-tabular">- ₹ 1,250</td>
+                    <td class="num-tabular"><strong>₹ 8,750</strong></td>
+                    <td>Branch Counter</td>
+                    <td><span class="scheme-category-tag"
+                        style="background: var(--status-success-bg); color: var(--status-success-text);">Verified</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Month 03</strong></td>
+                    <td>15-Sep-2026</td>
+                    <td>13-Sep-2026</td>
+                    <td class="num-tabular">RCP-26-1789</td>
+                    <td class="num-tabular">₹ 10,000</td>
+                    <td class="num-tabular">- ₹ 1,400</td>
+                    <td class="num-tabular"><strong>₹ 8,600</strong></td>
+                    <td>UPI / QR</td>
+                    <td><span class="scheme-category-tag"
+                        style="background: var(--status-success-bg); color: var(--status-success-text);">Verified</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Month 04</strong></td>
+                    <td>15-Oct-2026</td>
+                    <td>11-Oct-2026</td>
+                    <td class="num-tabular">RCP-26-2311</td>
+                    <td class="num-tabular">₹ 10,000</td>
+                    <td class="num-tabular">- ₹ 1,900</td>
+                    <td class="num-tabular"><strong>₹ 8,100</strong></td>
+                    <td>Bank NEFT</td>
+                    <td><span class="scheme-category-tag"
+                        style="background: var(--status-success-bg); color: var(--status-success-text);">Verified</span>
+                    </td>
+                  </tr>
+                  <tr style="background: var(--bg-gold-tint);">
+                    <td><strong>Month 05</strong></td>
+                    <td>15-Nov-2026</td>
+                    <td>Pending</td>
+                    <td class="num-tabular">—</td>
+                    <td class="num-tabular">₹ 10,000</td>
+                    <td class="num-tabular">- ₹ 1,750</td>
+                    <td class="num-tabular"><strong>₹ 8,250</strong></td>
+                    <td>Scheduled</td>
+                    <td><span class="scheme-category-tag"
+                        style="background: var(--status-warning-bg); color: var(--status-warning-text);">Due in 7
+                        Days</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: AUCTION SCHEDULES & TENDERS -->
+        <div class="dashboard-section-panel" id="dashAuctionsSection" style="display: none;">
+          <div class="form-card" style="margin-bottom: var(--space-6);">
+            <div
+              style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+              <div>
+                <h2 style="font-size: 1.35rem; margin-bottom: 4px;">Upcoming Auction Tender Schedules</h2>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Supervised monthly tender sessions
+                  and bidding bounds</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-open-modal="proxyTenderModal">Submit Proxy
+                Bidding Form</button>
+            </div>
+
+            <div class="features-grid-3" style="margin-bottom: 1.5rem;">
+              <div
+                style="background: var(--bg-secondary); padding: var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="dash-stat-label">Next Auction Date</span>
+                <strong style="font-size: 1.25rem; display: block; margin-top: 4px;">15th November 2026</strong>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Reporting Time: 02:30 PM IST</span>
+              </div>
+              <div
+                style="background: var(--bg-secondary); padding: var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="dash-stat-label">Maximum Bid Discount Cap</span>
+                <strong style="font-size: 1.25rem; display: block; margin-top: 4px;">30% (₹ 90,000)</strong>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Floor: 5% (₹ 15,000 Foreman Fee)</span>
+              </div>
+              <div
+                style="background: var(--bg-secondary); padding: var(--space-4); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="dash-stat-label">Auction Session Venue</span>
+                <strong style="font-size: 1.15rem; display: block; margin-top: 4px;">Sahayog Bhavan Hall</strong>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Room 204 &amp; Hybrid Stream</span>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Past Auction Outcomes (Cycles 1 to 4)</h3>
+            <div class="table-scroll-wrapper">
+              <table class="comparison-table" aria-label="Past Auctions Table">
+                <thead>
+                  <tr>
+                    <th>Cycle</th>
+                    <th>Date Held</th>
+                    <th>Winning Ticket</th>
+                    <th>Prized Member</th>
+                    <th>Winning Discount</th>
+                    <th>Foreman 5% Fee</th>
+                    <th>Dividend / Ticket</th>
+                    <th>Net Prize Released</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cycle 1</td>
+                    <td>15-Jul-2026</td>
+                    <td>#01 (Foreman)</td>
+                    <td>Coop Foreman Pool</td>
+                    <td>5.0% (Floor)</td>
+                    <td>₹ 15,000</td>
+                    <td>— (First Cycle)</td>
+                    <td>₹ 2,85,000</td>
+                  </tr>
+                  <tr>
+                    <td>Cycle 2</td>
+                    <td>15-Aug-2026</td>
+                    <td>#07</td>
+                    <td>M. Govindarajan</td>
+                    <td>17.5% (₹ 52,500)</td>
+                    <td>₹ 15,000</td>
+                    <td>₹ 1,250</td>
+                    <td>₹ 2,47,500</td>
+                  </tr>
+                  <tr>
+                    <td>Cycle 3</td>
+                    <td>15-Sep-2026</td>
+                    <td>#22</td>
+                    <td>R. Kalyani Ammal</td>
+                    <td>19.0% (₹ 57,000)</td>
+                    <td>₹ 15,000</td>
+                    <td>₹ 1,400</td>
+                    <td>₹ 2,43,000</td>
+                  </tr>
+                  <tr>
+                    <td>Cycle 4</td>
+                    <td>15-Oct-2026</td>
+                    <td>#14</td>
+                    <td>S. Venkataraman</td>
+                    <td>24.0% (₹ 72,000)</td>
+                    <td>₹ 15,000</td>
+                    <td>₹ 1,900</td>
+                    <td>₹ 2,28,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: PASSBOOK & STATEMENTS -->
+        <div class="dashboard-section-panel" id="dashStatementsSection" style="display: none;">
+          <div class="form-card">
+            <h2 style="font-size: 1.35rem; margin-bottom: 6px;">Passbook Statement &amp; Tax Ledger</h2>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+              Download verified quarterly statement summaries and certificate of subscription remittances.
+            </p>
+
+            <div class="features-grid-2" style="margin-bottom: 1.5rem;">
+              <div
+                style="background: var(--bg-secondary); padding: var(--space-5); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <h3 style="font-size: 1.1rem; margin-bottom: 4px;">Q2 FY 2026–27 Statement (Cycles 1–3)</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Covers Jul 2026 – Sep
+                  2026. Verified total paid: ₹27,350.</p>
+                <button type="button" class="btn btn-outline btn-sm"
+                  onclick="alert('Demo: Downloading Q2-Statement-SHG-8421.pdf');">Download PDF Statement</button>
+              </div>
+
+              <div
+                style="background: var(--bg-secondary); padding: var(--space-5); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <h3 style="font-size: 1.1rem; margin-bottom: 4px;">Annual Passbook Ledger Summary</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Consolidated ledger of all
+                  subscriptions, dividends, and interest.</p>
+                <button type="button" class="btn btn-outline btn-sm"
+                  onclick="alert('Demo: Downloading Annual-Ledger-SHG-8421.pdf');">Download Annual Ledger</button>
+              </div>
+            </div>
+
+            <div
+              style="background: var(--bg-primary); border-left: 4px solid var(--brand-gold); padding: 1rem; border-radius: var(--radius-xs); font-size: 0.85rem;">
+              <strong>Member Notice:</strong> Physical passbooks can be updated and stamped at any Sahayog Cooperative
+              branch counter during working hours without appointment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Proxy Tender Modal -->
+  <div class="modal-backdrop" id="proxyTenderModal" aria-hidden="true" role="dialog" aria-labelledby="proxyModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="proxyModalTitle">Submit Proxy Tender Authorization</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+        Authorize the Foreman to submit your auction bid within the specified ceiling if you cannot attend the session
+        in person.
+      </p>
+      <form
+        onsubmit="event.preventDefault(); alert('Proxy bid registered for Ticket #19.'); document.querySelector('#proxyTenderModal .modal-close-btn').click();">
+        <div class="form-group-single">
+          <label class="form-label">Member Ticket Number</label>
+          <input type="text" class="form-control" value="Ticket #19 — Priya Subramanian" readonly />
+        </div>
+        <div class="form-group-single">
+          <label class="form-label">Maximum Bid Discount Willing to Forgo (%)</label>
+          <input type="number" class="form-control" placeholder="Enter bid % between 5% and 30%" min="5" max="30"
+            step="0.5" required />
+        </div>
+        <div class="form-group-single">
+          <label class="form-label">Surety Declaration</label>
+          <label style="display: flex; gap: 8px; font-size: 0.85rem; margin-top: 4px;">
+            <input type="checkbox" required style="margin-top: 3px;" />
+            <span>I confirm that if declared prized subscriber, I will furnish acceptable sureties within 10 working
+              days.</span>
+          </label>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 1rem;">
+          <button type="button" class="btn btn-outline btn-sm" data-close-modal>Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm">Authorize Proxy Tender</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chit Schemes &amp; Comparison Directory | Sahayog Financial Cooperative</title>
+  <meta name="description" content="Explore and compare structured sample chit schemes across household, education, and enterprise tiers. Review monthly instalments, durations, foreman fees, and auction rules." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/schemes-data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Mandatory Sticky Navbar (Comes down smoothly on scroll) -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Sahayog Financial Cooperative Home">
+        <span class="brand-emblem" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Sahayog Cooperative</span>
+          <span class="brand-tagline">Chit &amp; Mutual Savings</span>
+        </span>
+      </a>
+
+      <div class="mobile-nav-controls">
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-expanded="false" aria-controls="navMenuWrapper" aria-label="Open navigation menu">
+          <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="nav-menu-wrapper" id="navMenuWrapper">
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <button type="button" class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                <span>Home</span>
+                <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a href="index.html" class="dropdown-link" role="menuitem">
+                  <span class="dropdown-link-title">Home 1 — Institutional</span>
+                  <span class="dropdown-link-desc">Classic cooperative overview &amp; featured schemes</span>
+                </a>
+                <a href="home-2.html" class="dropdown-link" role="menuitem">
+                  <span class="dropdown-link-title">Home 2 — Editorial &amp; Matrix</span>
+                  <span class="dropdown-link-desc">Interactive scheme estimator &amp; comparison focus</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="schemes.html" class="nav-link active">Schemes</a></li>
+            <li class="nav-item"><a href="rules.html" class="nav-link">Rules</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL layout" title="Toggle RTL layout">RTL</button>
+          <button type="button" class="theme-toggle-btn theme-toggle-desktop" data-theme-toggle aria-label="Toggle color theme">
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO (UNIFORM EXACT HEIGHT ACROSS ALL INNER PAGES) -->
+    <section class="page-hero" aria-labelledby="schemesPageTitle">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="eyebrow">Editable Sample INR Demonstration Schemes</span>
+          <h1 id="schemesPageTitle">Structured Chit Fund &amp; Mutual Savings Schemes</h1>
+          <p>
+            Discover, filter, and compare our sample chit schemes across household, education, and enterprise categories. Review monthly instalment commitments, group sizes, applicable charges, and auction mechanics before submitting an enquiry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. SCHEME DIRECTORY WITH FILTERING & SORTING -->
+    <section class="section" id="scheme-directory" aria-labelledby="directoryHeading">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="header-copy">
+            <span class="eyebrow">Interactive Scheme Explorer</span>
+            <h2 id="directoryHeading" class="section-title">Filter &amp; Sort Available Sample Schemes</h2>
+            <p class="section-subtitle">
+              All schemes below represent editable demonstration tiers in INR. No fixed profit or guaranteed return is promised.
+            </p>
+          </div>
+          <div>
+            <span id="filteredSchemesCount" style="font-size: 0.875rem; font-weight: 600; color: var(--text-muted);">
+              Showing 6 of 6 sample schemes
+            </span>
+          </div>
+        </div>
+
+        <!-- Filter & Sort Toolbar -->
+        <div class="filter-toolbar" role="region" aria-label="Scheme Filtering and Sorting Controls">
+          <div class="filter-pills-group" role="group" aria-label="Filter by scheme category">
+            <button type="button" class="filter-btn active" data-filter-category="all">All Categories (6)</button>
+            <button type="button" class="filter-btn" data-filter-category="entry">Entry &amp; Household (₹1L–₹2L)</button>
+            <button type="button" class="filter-btn" data-filter-category="family">Education &amp; Family (₹3L–₹5L)</button>
+            <button type="button" class="filter-btn" data-filter-category="enterprise">Business &amp; Milestone (₹10L–₹20L)</button>
+          </div>
+
+          <div class="filter-controls-right">
+            <div>
+              <label for="filterDurationSelect" style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted); margin-right: 6px;">Duration:</label>
+              <select id="filterDurationSelect" class="form-select-compact" aria-label="Filter by scheme duration">
+                <option value="all">All Durations</option>
+                <option value="25">25 Months (Short Tenure)</option>
+                <option value="30-40">30 – 40 Months (Medium Tenure)</option>
+                <option value="50">50 Months (Long Tenure)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="sortSchemesSelect" style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted); margin-right: 6px;">Sort By:</label>
+              <select id="sortSchemesSelect" class="form-select-compact" aria-label="Sort schemes">
+                <option value="value-asc">Chit Value: Low to High</option>
+                <option value="value-desc">Chit Value: High to Low</option>
+                <option value="instalment-asc">Monthly Instalment: Low to High</option>
+                <option value="duration-asc">Duration: Shortest First</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Scheme Cards Grid -->
+        <div class="schemes-grid" id="schemesDirectoryGrid" aria-live="polite">
+          <!-- Populated dynamically by main.js from window.SAHAYOG_SCHEMES -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SCHEME-SPECIFIC DETAIL INSPECTOR SECTION -->
+    <section class="section bg-secondary" id="scheme-details-section" aria-labelledby="detailInspectorHeading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Deep-Dive Scheme Specifications</span>
+          <h2 id="detailInspectorHeading" class="section-title">Scheme-Specific Terms, Fees &amp; Auction Breakdown</h2>
+          <p class="section-subtitle">
+            Select any sample scheme tab below (or click "View Scheme Details" on any card above) to inspect its complete participation requirements, surety norms, foreman fees, and monthly auction rules.
+          </p>
+        </div>
+
+        <!-- Scheme Selector Tabs -->
+        <div class="filter-pills-group" style="margin-bottom: 1.5rem;" role="tablist" aria-label="Select scheme for detailed breakdown">
+          <button type="button" class="filter-btn active" data-detail-tab="pratham-1l">Pratham (₹1,00,000)</button>
+          <button type="button" class="filter-btn" data-detail-tab="suraksha-2l">Suraksha (₹2,00,000)</button>
+          <button type="button" class="filter-btn" data-detail-tab="pragati-3l">Pragati (₹3,00,000)</button>
+          <button type="button" class="filter-btn" data-detail-tab="samriddhi-5l">Samriddhi (₹5,00,000)</button>
+          <button type="button" class="filter-btn" data-detail-tab="vyapar-10l">Vyapar (₹10,00,000)</button>
+          <button type="button" class="filter-btn" data-detail-tab="shikhar-20l">Shikhar (₹20,00,000)</button>
+        </div>
+
+        <!-- Inspector Container -->
+        <div id="schemeDetailInspector" aria-live="polite">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FULL COMPARISON TABLE -->
+    <section class="section" id="comparison-table-section" aria-labelledby="comparisonTableHeading">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="header-copy">
+            <span class="eyebrow">Complete Matrix</span>
+            <h2 id="comparisonTableHeading" class="section-title">Side-by-Side Scheme Comparison Table</h2>
+            <p class="section-subtitle">
+              Compare all six editable sample schemes across chit value, gross monthly subscription, tenure, group count, foreman commission, and maximum auction discount cap.
+            </p>
+          </div>
+          <div>
+            <a href="rules.html" class="btn btn-outline">Read Full Auction Rules &rarr;</a>
+          </div>
+        </div>
+
+        <p class="mobile-comparison-hint">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>Swipe horizontally on smaller viewports to inspect all columns.</span>
+        </p>
+
+        <div class="table-scroll-wrapper">
+          <table class="comparison-table" aria-label="Full Comparison Table of Sample Chit Schemes">
+            <thead>
+              <tr>
+                <th scope="col">Scheme Name &amp; Code</th>
+                <th scope="col">Chit Value (INR)</th>
+                <th scope="col">Gross Monthly</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Member Count</th>
+                <th scope="col">Foreman Commission</th>
+                <th scope="col">Max Bid Discount</th>
+                <th scope="col">Inspect / Enquire</th>
+              </tr>
+            </thead>
+            <tbody id="schemesComparisonBody">
+              <!-- Populated by main.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. APPLICABLE CHARGES, AUCTION & PARTICIPATION DISCLOSURE -->
+    <section class="section bg-navy-institutional" aria-labelledby="chargesDisclosureHeading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Transparent Cost &amp; Procedure Summary</span>
+          <h2 id="chargesDisclosureHeading" class="section-title">Understanding Applicable Charges, Auctions &amp; Eligibility</h2>
+          <p class="section-subtitle" style="color: var(--on-dark-secondary);">
+            Every prospective subscriber should review how charges and monthly auctions operate prior to signing a scheme agreement.
+          </p>
+        </div>
+
+        <div class="features-grid-3">
+          <div class="transparency-card">
+            <div class="transparency-card-num">01 • Applicable Charges &amp; Fees</div>
+            <h3>Foreman Commission &amp; Documentation</h3>
+            <p>Each sample scheme carries a 5% foreman commission on the gross chit value (deducted when disbursing the prize amount) and a nominal one-time enrolment documentation fee (₹250 to ₹1,000 sample). Late instalments beyond the 7-day grace window attract documented administrative notice fees.</p>
+          </div>
+
+          <div class="transparency-card">
+            <div class="transparency-card-num">02 • Auction &amp; Draw Protocol</div>
+            <h3>Competitive Bidding &amp; Tie-Breaker Lots</h3>
+            <p>Monthly auctions open at a 5% floor (covering foreman commission) up to the scheme's ceiling (25%–35%). The discount foregone above 5% is distributed equally as a dividend among all members. If multiple subscribers bid the ceiling, a witnessed lot draw determines the prized member.</p>
+          </div>
+
+          <div class="transparency-card">
+            <div class="transparency-card-num">03 • Participation &amp; Surety Norms</div>
+            <h3>KYC Admission &amp; Future Liability Security</h3>
+            <p>Enrolment requires valid photo ID, local residence proof, and income verification matching the monthly commitment. Prized subscribers must provide acceptable personal guarantors or deposit/collateral security covering remaining unpaid instalments before prize payout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ENQUIRY CTA -->
+    <section class="section-sm bg-subtle" aria-labelledby="schemesEnquiryCtaHeading">
+      <div class="container">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+          <div style="max-width: 640px;">
+            <span class="eyebrow">Have a Specific Scheme in Mind?</span>
+            <h2 id="schemesEnquiryCtaHeading" style="margin-bottom: 0.5rem;">Request the Printed Scheme Booklet &amp; Enrolment Checklist</h2>
+            <p>Submit an enquiry indicating your preferred chit value and monthly budget. Our member relations team will guide you through eligibility and documentation.</p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary btn-lg">Make a Scheme Enquiry</a>
+            <a href="rules.html" class="btn btn-outline btn-lg">Review Rules &amp; Bylaws</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MULTI-COLUMN FOOTER (WHITE BG IN LIGHTMODE + HOVER SOCIAL ICONS) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-emblem" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">Sahayog Cooperative</span>
+              <span class="brand-tagline">Chit &amp; Mutual Savings</span>
+            </span>
+          </a>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+            A member-focused financial cooperative website template designed for transparent communication of chit fund schemes, participation bylaws, and structured savings.
+          </p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+            <strong>Office Placeholder:</strong> 2nd Floor, Sahayog Bhavan, Heritage Commercial Complex, [Your City / State - PIN]
+          </p>
+          <div class="footer-social-links" aria-label="Cooperative Social Channels">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Sample Schemes</h3>
+          <ul class="footer-links">
+            <li><a href="schemes.html?highlight=pratham-1l#scheme-details-section">Pratham ₹1,00,000 (25 Mo)</a></li>
+            <li><a href="schemes.html?highlight=suraksha-2l#scheme-details-section">Suraksha ₹2,00,000 (25 Mo)</a></li>
+            <li><a href="schemes.html?highlight=pragati-3l#scheme-details-section">Pragati ₹3,00,000 (30 Mo)</a></li>
+            <li><a href="schemes.html?highlight=samriddhi-5l#scheme-details-section">Samriddhi ₹5,00,000 (40 Mo)</a></li>
+            <li><a href="schemes.html?highlight=vyapar-10l#scheme-details-section">Vyapar ₹10,00,000 (40 Mo)</a></li>
+            <li><a href="schemes.html?highlight=shikhar-20l#scheme-details-section">Shikhar ₹20,00,000 (50 Mo)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Governance &amp; Pages</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home 1 — Institutional</a></li>
+            <li><a href="home-2.html">Home 2 — Editorial &amp; Matrix</a></li>
+            <li><a href="about.html">About &amp; Governance</a></li>
+            <li><a href="schemes.html">Scheme Comparison Table</a></li>
+            <li><a href="rules.html">Rules &amp; Bylaws (12 Clauses)</a></li>
+            <li><a href="contact.html">Membership Enquiry Form</a></li>
+            <li><a href="dashboard.html">Member Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Member Desk &amp; Hours</h3>
+          <ul class="footer-links" style="margin-bottom: 1rem;">
+            <li><a href="tel:+918000000000">Phone: +91 (080) 0000-0000 (Sample)</a></li>
+            <li><a href="mailto:enquiries@sahayog-template.example">Email: enquiries@sahayog-template.example</a></li>
+            <li><span style="font-size: 0.85rem; color: var(--text-muted);">Mon – Sat: 9:30 AM to 5:30 PM IST</span></li>
+          </ul>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <a href="signup.html" class="btn btn-primary btn-sm">Member Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclosure-box">
+        <strong>Important Financial &amp; Template Disclosure:</strong> This website is a customizable design template containing fictional sample INR amounts, illustrative testimonials, and editable rule placeholders. Nothing on this site constitutes an actual public offer or solicitation, nor does any chit scheme promise guaranteed profits, fixed returns, or risk-free savings.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Sahayog Financial Cooperative (Template Demonstration). All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#privacyModal" data-open-modal="privacyModal">Privacy Policy</a>
+          <a href="#termsModal" data-open-modal="termsModal">Terms &amp; Disclosures</a>
+          <a href="rules.html#clause-12">Grievance Redressal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-backdrop" id="privacyModal" aria-hidden="true" role="dialog" aria-labelledby="privacyModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="privacyModalTitle">Sample Privacy Policy Placeholder</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <p style="margin-bottom: 1.5rem;">Editable Privacy Notice for template demonstration. Form data is validated locally in your browser.</p>
+      <button type="button" class="btn btn-primary btn-sm" data-close-modal>Close Window</button>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="termsModal" aria-hidden="true" role="dialog" aria-labelledby="termsModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="termsModalTitle">Terms of Use &amp; Financial Disclosures</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <p style="margin-bottom: 1.5rem;">All scheme figures on this page are fictional sample INR amounts. No fixed returns or guaranteed profits are promised.</p>
+      <button type="button" class="btn btn-primary btn-sm" data-close-modal>I Understand</button>
+    </div>
+  </div>
+
+</body>
+</html>

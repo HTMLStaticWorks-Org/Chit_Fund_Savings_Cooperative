@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Structured household savings schedule, cooperative passbook ledger, and bylaws booklet">
+  <defs>
+    <linearGradient id="oakTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B442A"/>
+      <stop offset="100%" stop-color="#4A2D1B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm Oak Tabletop Background -->
+  <rect width="800" height="500" fill="url(#oakTop)"/>
+  <!-- Subtle Wood Grain Lines -->
+  <g stroke="#583620" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="70" x2="800" y2="70"/>
+    <line x1="0" y1="165" x2="800" y2="165"/>
+    <line x1="0" y1="275" x2="800" y2="275"/>
+    <line x1="0" y1="390" x2="800" y2="390"/>
+  </g>
+
+  <!-- Woven Linen Desk Mat -->
+  <rect x="65" y="45" width="670" height="410" rx="14" fill="#F2ECE1" stroke="#B68D40" stroke-width="3"/>
+
+  <!-- Left Document: Printed Chit Instalment Schedule & Rules Ledger -->
+  <g transform="translate(105, 80)">
+    <rect x="0" y="0" width="310" height="340" rx="6" fill="#FAF7F2" stroke="#C5B9A5" stroke-width="2"/>
+    <rect x="0" y="0" width="310" height="52" rx="6" fill="#0F233C"/>
+    <circle cx="32" cy="26" r="12" fill="#B68D40"/>
+    <rect x="56" y="18" width="160" height="8" rx="2" fill="#FAF7F2"/>
+    <rect x="56" y="31" width="110" height="5" rx="2" fill="#DFC58E"/>
+
+    <!-- Ledger Rows -->
+    <g transform="translate(22, 72)">
+      <rect x="0" y="0" width="266" height="28" rx="3" fill="#E6EFEA"/>
+      <rect x="10" y="10" width="75" height="7" rx="2" fill="#1B4332"/>
+      <rect x="110" y="10" width="60" height="7" rx="2" fill="#0F233C"/>
+      <rect x="195" y="10" width="55" height="7" rx="2" fill="#B68D40"/>
+
+      <g transform="translate(0, 40)">
+        <line x1="0" y1="24" x2="266" y2="24" stroke="#DFD7C8" stroke-width="1.5"/>
+        <rect x="10" y="6" width="65" height="6" rx="2" fill="#344960"/>
+        <rect x="110" y="6" width="52" height="6" rx="2" fill="#1B4332"/>
+        <rect x="195" y="6" width="48" height="6" rx="2" fill="#344960"/>
+      </g>
+      <g transform="translate(0, 76)">
+        <line x1="0" y1="24" x2="266" y2="24" stroke="#DFD7C8" stroke-width="1.5"/>
+        <rect x="10" y="6" width="68" height="6" rx="2" fill="#344960"/>
+        <rect x="110" y="6" width="52" height="6" rx="2" fill="#1B4332"/>
+        <rect x="195" y="6" width="48" height="6" rx="2" fill="#344960"/>
+      </g>
+      <g transform="translate(0, 112)">
+        <line x1="0" y1="24" x2="266" y2="24" stroke="#DFD7C8" stroke-width="1.5"/>
+        <rect x="10" y="6" width="62" height="6" rx="2" fill="#344960"/>
+        <rect x="110" y="6" width="52" height="6" rx="2" fill="#1B4332"/>
+        <rect x="195" y="6" width="48" height="6" rx="2" fill="#344960"/>
+      </g>
+      <g transform="translate(0, 148)">
+        <line x1="0" y1="24" x2="266" y2="24" stroke="#DFD7C8" stroke-width="1.5"/>
+        <rect x="10" y="6" width="70" height="6" rx="2" fill="#344960"/>
+        <rect x="110" y="6" width="52" height="6" rx="2" fill="#1B4332"/>
+        <rect x="195" y="6" width="48" height="6" rx="2" fill="#344960"/>
+      </g>
+
+      <!-- Official Verification Seal Stamp -->
+      <g transform="translate(185, 190)">
+        <circle cx="34" cy="30" r="26" fill="none" stroke="#1B4332" stroke-width="2.5" stroke-dasharray="4,2"/>
+        <circle cx="34" cy="30" r="20" fill="none" stroke="#1B4332" stroke-width="1.5"/>
+        <path d="M25,30 L32,37 L44,23" stroke="#1B4332" stroke-width="3" fill="none"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Top: Member Passbook -->
+  <g transform="translate(450, 85)">
+    <rect x="0" y="0" width="240" height="155" rx="8" fill="#1B4332" stroke="#B68D40" stroke-width="2.5"/>
+    <rect x="18" y="18" width="204" height="119" rx="4" fill="none" stroke="#DFC58E" stroke-width="1.2"/>
+    <circle cx="120" cy="56" r="20" fill="#0F233C" stroke="#B68D40" stroke-width="2"/>
+    <rect x="65" y="90" width="110" height="8" rx="2" fill="#FAF7F2"/>
+    <rect x="82" y="106" width="76" height="6" rx="2" fill="#DFC58E"/>
+  </g>
+
+  <!-- Right Bottom: Fountain Pen & Reading Glasses & Tea Cup -->
+  <g transform="translate(460, 275)">
+    <!-- Fountain Pen -->
+    <g transform="rotate(-18 90 35)">
+      <rect x="0" y="24" width="175" height="14" rx="7" fill="#0F233C" stroke="#B68D40" stroke-width="1.5"/>
+      <rect x="135" y="24" width="8" height="14" fill="#B68D40"/>
+      <polygon points="175,26 198,31 175,36" fill="#B68D40"/>
+    </g>
+    <!-- Brass Rim Spectacles -->
+    <g transform="translate(15, 75)">
+      <circle cx="32" cy="24" r="22" fill="#DCE9E4" fill-opacity="0.35" stroke="#B68D40" stroke-width="3"/>
+      <circle cx="96" cy="24" r="22" fill="#DCE9E4" fill-opacity="0.35" stroke="#B68D40" stroke-width="3"/>
+      <path d="M54,22 Q64,14 74,22" fill="none" stroke="#B68D40" stroke-width="3"/>
+    </g>
+    <!-- Tea Cup -->
+    <g transform="translate(165, 55)">
+      <circle cx="38" cy="38" r="36" fill="#FAF7F2" stroke="#C5B9A5" stroke-width="2"/>
+      <circle cx="38" cy="38" r="24" fill="#B87B4B"/>
+    </g>
+  </g>
+</svg>
+

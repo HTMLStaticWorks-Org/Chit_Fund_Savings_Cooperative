@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-label="Cooperative society member meeting around a conference table">
+  <defs>
+    <linearGradient id="boardroomWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F233C"/>
+      <stop offset="100%" stop-color="#152E4D"/>
+    </linearGradient>
+    <linearGradient id="tableSurface" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6B442A"/>
+      <stop offset="50%" stop-color="#855636"/>
+      <stop offset="100%" stop-color="#583721"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Navy Institutional Boardroom Background -->
+  <rect width="900" height="520" fill="url(#boardroomWall)"/>
+
+  <!-- Architectural Brass Trim & Sage Wall Panels -->
+  <g stroke="#B68D40" stroke-width="1.5" opacity="0.4" fill="none">
+    <rect x="40" y="36" width="240" height="220" rx="6"/>
+    <rect x="310" y="36" width="280" height="220" rx="6"/>
+    <rect x="620" y="36" width="240" height="220" rx="6"/>
+  </g>
+
+  <!-- Central Presentation Board (Monthly Chit Schedule & Governance Rules) -->
+  <g transform="translate(335, 56)">
+    <rect x="0" y="0" width="230" height="145" rx="6" fill="#FAF7F2" stroke="#B68D40" stroke-width="3"/>
+    <rect x="16" y="16" width="198" height="22" rx="3" fill="#1B4332"/>
+    <rect x="26" y="24" width="110" height="6" rx="2" fill="#DFC58E"/>
+    <!-- Table grid inside board -->
+    <g stroke="#C5B9A5" stroke-width="1.5">
+      <line x1="16" y1="56" x2="214" y2="56"/>
+      <line x1="16" y1="78" x2="214" y2="78"/>
+      <line x1="16" y1="100" x2="214" y2="100"/>
+      <line x1="16" y1="122" x2="214" y2="122"/>
+      <line x1="88" y1="44" x2="88" y2="132"/>
+      <line x1="154" y1="44" x2="154" y2="132"/>
+    </g>
+    <rect x="24" y="63" width="50" height="6" rx="2" fill="#0F233C"/>
+    <rect x="98" y="63" width="42" height="6" rx="2" fill="#1B4332"/>
+    <rect x="164" y="63" width="38" height="6" rx="2" fill="#B68D40"/>
+    <rect x="24" y="85" width="50" height="6" rx="2" fill="#0F233C"/>
+    <rect x="98" y="85" width="42" height="6" rx="2" fill="#1B4332"/>
+    <rect x="164" y="85" width="38" height="6" rx="2" fill="#B68D40"/>
+  </g>
+
+  <!-- 5 Cooperative Members Around the Table -->
+  <!-- Member 1 (Far Left) -->
+  <g transform="translate(110, 175)">
+    <path d="M0,120 C0,82 84,82 84,120 L95,190 L-10,190 Z" fill="#1B4332"/>
+    <circle cx="42" cy="48" r="28" fill="#D39868"/>
+    <path d="M14,44 C14,16 70,16 70,44 C60,28 24,28 14,44 Z" fill="#1D2025"/>
+  </g>
+
+  <!-- Member 2 (Mid Left) -->
+  <g transform="translate(255, 165)">
+    <path d="M0,125 C0,86 86,86 86,125 L96,195 L-10,195 Z" fill="#DED3BE"/>
+    <polygon points="30,92 56,92 43,145" fill="#1B4332"/>
+    <circle cx="43" cy="48" r="29" fill="#C68B59"/>
+    <path d="M14,42 C14,14 72,14 72,42 C62,26 24,26 14,42 Z" fill="#2A2E35"/>
+  </g>
+
+  <!-- Chairperson / Foreman (Center) -->
+  <g transform="translate(405, 155)">
+    <path d="M0,130 C0,90 90,90 90,130 L102,205 L-12,205 Z" fill="#223D60" stroke="#B68D40" stroke-width="1.5"/>
+    <polygon points="32,96 58,96 45,155" fill="#FAF7F2"/>
+    <polygon points="41,102 49,102 51,150 45,158 39,150" fill="#B68D40"/>
+    <circle cx="45" cy="48" r="30" fill="#D39868"/>
+    <path d="M15,42 C15,12 75,12 75,42 C65,26 25,26 15,42 Z" fill="#3A3F47"/>
+  </g>
+
+  <!-- Member 4 (Mid Right) -->
+  <g transform="translate(555, 165)">
+    <path d="M0,125 C0,86 86,86 86,125 L96,195 L-10,195 Z" fill="#8C3B2B"/>
+    <path d="M15,92 L65,195 L88,195 L42,92 Z" fill="#DFC58E" opacity="0.85"/>
+    <circle cx="43" cy="48" r="29" fill="#D39868"/>
+    <path d="M14,44 C14,14 72,14 72,44 C62,26 24,26 14,44 Z" fill="#191B1F"/>
+  </g>
+
+  <!-- Member 5 (Far Right) -->
+  <g transform="translate(700, 175)">
+    <path d="M0,120 C0,82 84,82 84,120 L95,190 L-10,190 Z" fill="#285040"/>
+    <circle cx="42" cy="48" r="28" fill="#C68B59"/>
+    <path d="M14,42 C14,14 70,14 70,42 C60,26 24,26 14,42 Z" fill="#252830"/>
+  </g>
+
+  <!-- Long Cooperative Conference Table -->
+  <g transform="translate(50, 325)">
+    <polygon points="45,0 755,0 800,65 0,65" fill="url(#tableSurface)" stroke="#B68D40" stroke-width="2"/>
+    <rect x="0" y="65" width="800" height="130" fill="#462B19"/>
+    <rect x="25" y="82" width="750" height="92" fill="none" stroke="#B68D40" stroke-width="1.2" opacity="0.45"/>
+
+    <!-- Scheme Booklets & Ledger Sheets on Conference Table -->
+    <g transform="translate(120, 18)">
+      <polygon points="0,8 65,4 72,28 6,32" fill="#FAF7F2"/>
+      <polygon points="160,10 225,6 232,30 166,34" fill="#FAF7F2"/>
+      <polygon points="325,6 410,6 416,34 319,34" fill="#F2ECE1" stroke="#B68D40" stroke-width="1.5"/>
+      <polygon points="500,8 565,12 560,34 494,30" fill="#FAF7F2"/>
+      <polygon points="620,6 680,10 675,32 614,28" fill="#FAF7F2"/>
+    </g>
+  </g>
+</svg>
+

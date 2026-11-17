@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Official Sahayog Cooperative Chit Fund Passbook Ledger and Bylaws Booklet">
+  <defs>
+    <linearGradient id="deskBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4E311B"/>
+      <stop offset="100%" stop-color="#2D1A0C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wood Table Surface -->
+  <rect width="800" height="520" fill="url(#deskBg)"/>
+  <!-- Fabric Table Runner / Blotter -->
+  <rect x="50" y="30" width="700" height="460" rx="12" fill="#FAF7F2" stroke="#B68D40" stroke-width="2.5"/>
+
+  <!-- Official Open Passbook Ledger (Spanning Center) -->
+  <g transform="translate(100, 60)">
+    <!-- Book Shadow -->
+    <rect x="4" y="6" width="600" height="380" rx="8" fill="#000000" opacity="0.15"/>
+    <!-- Left Page -->
+    <path d="M10 0h290v380H10a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8z" fill="#FFFDF9" stroke="#DFD7C8" stroke-width="1.5"/>
+    <!-- Right Page -->
+    <path d="M300 0h290a8 8 0 0 1 8 8v364a8 8 0 0 1-8 8H300V0z" fill="#FFFDF9" stroke="#DFD7C8" stroke-width="1.5"/>
+    <!-- Center Spine Crease -->
+    <rect x="296" y="0" width="8" height="380" fill="#EAE2D3"/>
+
+    <!-- Left Page Content: Member Chit Account Information -->
+    <g transform="translate(25, 25)">
+      <!-- Top Header -->
+      <rect x="0" y="0" width="250" height="34" rx="4" fill="#0F233C"/>
+      <text x="125" y="22" fill="#DFC58E" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle" letter-spacing="0.5">MEMBER PASSBOOK &amp; CHIT LEDGER</text>
+
+      <text x="0" y="55" fill="#1B4332" font-family="sans-serif" font-size="11" font-weight="bold">MEMBER ID:</text>
+      <text x="90" y="55" fill="#0F233C" font-family="monospace" font-size="12" font-weight="bold">SHG-MEM-8421</text>
+
+      <text x="0" y="75" fill="#1B4332" font-family="sans-serif" font-size="11" font-weight="bold">SUBSCRIBER:</text>
+      <text x="90" y="75" fill="#0F233C" font-family="sans-serif" font-size="11" font-weight="600">Priya Subramanian</text>
+
+      <text x="0" y="95" fill="#1B4332" font-family="sans-serif" font-size="11" font-weight="bold">SCHEME TIER:</text>
+      <text x="90" y="95" fill="#0F233C" font-family="sans-serif" font-size="11">Pragati 3 Lakh (30 Mo)</text>
+
+      <text x="0" y="115" fill="#1B4332" font-family="sans-serif" font-size="11" font-weight="bold">TICKET NO:</text>
+      <text x="90" y="115" fill="#B68D40" font-family="monospace" font-size="12" font-weight="bold">TICKET #19</text>
+
+      <line x1="0" y1="130" x2="250" y2="130" stroke="#DFD7C8" stroke-width="1.5"/>
+
+      <!-- Rules Snapshot in Passbook -->
+      <text x="0" y="150" fill="#0F233C" font-family="sans-serif" font-size="10" font-weight="bold">BYLAW CLAUSES ACKNOWLEDGED:</text>
+      <text x="0" y="170" fill="#5A6D82" font-family="sans-serif" font-size="9.5">• 5% Foreman Commission (Clause 06)</text>
+      <text x="0" y="188" fill="#5A6D82" font-family="sans-serif" font-size="9.5">• Monthly Auction on 15th at 2:30 PM (Clause 05)</text>
+      <text x="0" y="206" fill="#5A6D82" font-family="sans-serif" font-size="9.5">• 7-Day Payment Grace Window (Clause 04)</text>
+      <text x="0" y="224" fill="#5A6D82" font-family="sans-serif" font-size="9.5">• Surety Norms Before Prize Disbursal (Clause 07)</text>
+
+      <!-- Official Round Stamp Seal -->
+      <g transform="translate(140, 240)">
+        <circle cx="45" cy="45" r="40" fill="none" stroke="#1B4332" stroke-width="2.5" stroke-dasharray="4,2"/>
+        <circle cx="45" cy="45" r="32" fill="none" stroke="#1B4332" stroke-width="1.2"/>
+        <text x="45" y="42" fill="#1B4332" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">SAHAYOG CHIT COOP</text>
+        <text x="45" y="54" fill="#B68D40" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">VERIFIED &amp; SEALED</text>
+      </g>
+    </g>
+
+    <!-- Right Page Content: Monthly Subscription Ledger Entries -->
+    <g transform="translate(320, 25)">
+      <rect x="0" y="0" width="250" height="24" fill="#1B4332"/>
+      <text x="125" y="16" fill="#FAF7F2" font-family="sans-serif" font-size="10.5" font-weight="bold" text-anchor="middle">SUBSCRIPTION &amp; DIVIDEND SCHEDULE</text>
+
+      <!-- Ledger Table Headers -->
+      <g transform="translate(0, 32)">
+        <rect x="0" y="0" width="250" height="18" fill="#E6EFEA"/>
+        <text x="8" y="13" fill="#0F233C" font-family="sans-serif" font-size="8.5" font-weight="bold">Mo.</text>
+        <text x="40" y="13" fill="#0F233C" font-family="sans-serif" font-size="8.5" font-weight="bold">Gross</text>
+        <text x="95" y="13" fill="#0F233C" font-family="sans-serif" font-size="8.5" font-weight="bold">Dividend</text>
+        <text x="160" y="13" fill="#0F233C" font-family="sans-serif" font-size="8.5" font-weight="bold">Net Paid</text>
+        <text x="215" y="13" fill="#0F233C" font-family="sans-serif" font-size="8.5" font-weight="bold">Sign</text>
+      </g>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 56)">
+        <text x="8" y="12" fill="#0F233C" font-family="sans-serif" font-size="9" font-weight="bold">M 01</text>
+        <text x="40" y="12" fill="#5A6D82" font-family="monospace" font-size="9">₹ 10,000</text>
+        <text x="95" y="12" fill="#1B4332" font-family="monospace" font-size="9">— (1st)</text>
+        <text x="160" y="12" fill="#0F233C" font-family="monospace" font-size="9" font-weight="bold">₹ 10,000</text>
+        <text x="215" y="12" fill="#B68D40" font-family="cursive" font-size="10">VR</text>
+        <line x1="0" y1="18" x2="250" y2="18" stroke="#DFD7C8" stroke-width="1"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 80)">
+        <text x="8" y="12" fill="#0F233C" font-family="sans-serif" font-size="9" font-weight="bold">M 02</text>
+        <text x="40" y="12" fill="#5A6D82" font-family="monospace" font-size="9">₹ 10,000</text>
+        <text x="95" y="12" fill="#1B4332" font-family="monospace" font-size="9">- ₹ 1,250</text>
+        <text x="160" y="12" fill="#0F233C" font-family="monospace" font-size="9" font-weight="bold">₹ 8,750</text>
+        <text x="215" y="12" fill="#B68D40" font-family="cursive" font-size="10">VR</text>
+        <line x1="0" y1="18" x2="250" y2="18" stroke="#DFD7C8" stroke-width="1"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 104)">
+        <text x="8" y="12" fill="#0F233C" font-family="sans-serif" font-size="9" font-weight="bold">M 03</text>
+        <text x="40" y="12" fill="#5A6D82" font-family="monospace" font-size="9">₹ 10,000</text>
+        <text x="95" y="12" fill="#1B4332" font-family="monospace" font-size="9">- ₹ 1,400</text>
+        <text x="160" y="12" fill="#0F233C" font-family="monospace" font-size="9" font-weight="bold">₹ 8,600</text>
+        <text x="215" y="12" fill="#B68D40" font-family="cursive" font-size="10">VR</text>
+        <line x1="0" y1="18" x2="250" y2="18" stroke="#DFD7C8" stroke-width="1"/>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 128)">
+        <text x="8" y="12" fill="#0F233C" font-family="sans-serif" font-size="9" font-weight="bold">M 04</text>
+        <text x="40" y="12" fill="#5A6D82" font-family="monospace" font-size="9">₹ 10,000</text>
+        <text x="95" y="12" fill="#1B4332" font-family="monospace" font-size="9">- ₹ 1,900</text>
+        <text x="160" y="12" fill="#0F233C" font-family="monospace" font-size="9" font-weight="bold">₹ 8,100</text>
+        <text x="215" y="12" fill="#B68D40" font-family="cursive" font-size="10">VR</text>
+        <line x1="0" y1="18" x2="250" y2="18" stroke="#DFD7C8" stroke-width="1"/>
+      </g>
+
+      <!-- Row 5 (Active Month) -->
+      <g transform="translate(0, 152)">
+        <rect x="0" y="0" width="250" height="20" fill="#FEF5E6"/>
+        <text x="8" y="13" fill="#8A5812" font-family="sans-serif" font-size="9" font-weight="bold">M 05</text>
+        <text x="40" y="13" fill="#8A5812" font-family="monospace" font-size="9">₹ 10,000</text>
+        <text x="95" y="13" fill="#1B4332" font-family="monospace" font-size="9">- ₹ 1,750</text>
+        <text x="160" y="13" fill="#8A5812" font-family="monospace" font-size="9" font-weight="bold">₹ 8,250</text>
+        <text x="205" y="13" fill="#185A37" font-family="sans-serif" font-size="8.5" font-weight="bold">DUE 15th</text>
+      </g>
+
+      <!-- Totals Box at bottom -->
+      <g transform="translate(0, 230)">
+        <rect x="0" y="0" width="250" height="50" rx="4" fill="#0F233C"/>
+        <text x="12" y="20" fill="#DFC58E" font-family="sans-serif" font-size="10" font-weight="bold">TOTAL PAID TO DATE (4 MO):</text>
+        <text x="238" y="20" fill="#FAF7F2" font-family="monospace" font-size="12" font-weight="bold" text-anchor="end">₹ 35,450</text>
+        <text x="12" y="38" fill="#7CE0B3" font-family="sans-serif" font-size="9.5">TOTAL DIVIDENDS SAVED:</text>
+        <text x="238" y="38" fill="#7CE0B3" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end">₹ 4,550</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Brass Fountain Pen resting diagonally on right bottom -->
+  <g transform="translate(640, 380) rotate(-35)">
+    <rect x="0" y="0" width="130" height="12" rx="6" fill="#0F233C" stroke="#B68D40" stroke-width="1.5"/>
+    <rect x="90" y="0" width="8" height="12" fill="#B68D40"/>
+    <polygon points="130,1 150,6 130,11" fill="#DFC58E"/>
+  </g>
+</svg>
+
