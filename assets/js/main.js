@@ -435,7 +435,7 @@
                 </div>
                 <h3 style="font-size: 1.6rem; display: block; margin-bottom: 4px;">${scheme.name} — Complete Participation Terms</h3>
               </div>
-              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <div class="scheme-inspector-actions" style="display: flex; gap: 10px; flex-wrap: wrap;">
                 <a href="rules.html" class="btn btn-outline btn-sm">Review Governing Rules</a>
                 <a href="contact.html?scheme=${scheme.id}" class="btn btn-primary btn-sm">Enquire About ${scheme.name}</a>
               </div>
@@ -884,6 +884,36 @@
         }
       });
     });
+
+    /* ==========================================================================
+       13. BACK TO TOP BUTTON (ALL PAGES)
+       ========================================================================== */
+    if (!document.getElementById("backToTopBtn")) {
+      const backBtn = document.createElement("button");
+      backBtn.type = "button";
+      backBtn.id = "backToTopBtn";
+      backBtn.className = "back-to-top-btn";
+      backBtn.setAttribute("aria-label", "Back to top");
+      backBtn.setAttribute("title", "Back to top");
+      backBtn.innerHTML =
+        '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>';
+      document.body.appendChild(backBtn);
+
+      const toggleBackToTop = () => {
+        if (window.scrollY > 280) {
+          backBtn.classList.add("visible");
+        } else {
+          backBtn.classList.remove("visible");
+        }
+      };
+
+      window.addEventListener("scroll", toggleBackToTop, { passive: true });
+      toggleBackToTop();
+
+      backBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
   });
 
   function closeAllModals() {

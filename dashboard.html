@@ -44,15 +44,6 @@
           </div>
         </div>
 
-        <!-- Logged-in Member Profile Snippet -->
-        <div class="dashboard-user-card">
-          <div class="dashboard-user-avatar" aria-hidden="true">PS</div>
-          <div class="dashboard-user-info">
-            <strong>Priya Subramanian</strong>
-            <span>ID: SHG-MEM-8421</span>
-          </div>
-        </div>
-
         <!-- Navigation Links -->
         <nav class="dashboard-nav-list" aria-label="Dashboard Sections">
           <a href="#overview" class="dashboard-nav-link active" data-dash-tab="dashOverviewSection">
@@ -105,10 +96,47 @@
         </nav>
       </div>
 
-      <!-- Bottom of Sidebar: RTL/Theme Toggles & Logout Button -->
+      <!-- Bottom of Sidebar: Logout Button -->
       <div class="dashboard-sidebar-footer">
-        <!-- RTL and Theme Buttons in Side Menu -->
-        <div class="dashboard-sidebar-toggles">
+        <a href="login.html" class="dashboard-logout-btn" title="Sign out of member portal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Sidebar Backdrop for Mobile/Tablet Drawer -->
+    <div class="dashboard-sidebar-backdrop" id="dashboardSidebarBackdrop"></div>
+
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <div class="dashboard-main">
+      <!-- Top Bar: Welcome Message on Left; RTL, Theme & Profile in Top-Right Corner -->
+      <header class="dashboard-topbar">
+        <div style="display: flex; align-items: center; gap: 14px; min-width: 0;">
+          <!-- Hamburger toggle button for Mobile/Tablet/1024px -->
+          <button type="button" class="dashboard-hamburger-btn" id="dashboardSidebarToggle" aria-expanded="false"
+            aria-controls="dashboardSidebar" aria-label="Toggle sidebar menu">
+            <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+          <div style="min-width: 0;">
+            <h1 class="dashboard-welcome-title">Welcome back, Priya Subramanian!</h1>
+            <p style="font-size: 0.8125rem; color: var(--text-muted); margin: 0;">
+              Member Dashboard • <strong>Sahayog Pragati 3 Lakh Group</strong> • Ticket #19
+            </p>
+          </div>
+        </div>
+
+        <!-- Top-Right Corner: RTL, Theme Toggle & Member Profile -->
+        <div class="dashboard-topbar-right">
           <button type="button" class="rtl-toggle-btn" data-rtl-toggle aria-label="Toggle RTL layout"
             title="Toggle RTL layout">RTL</button>
           <button type="button" class="theme-toggle-btn" data-theme-toggle aria-label="Toggle color theme">
@@ -129,41 +157,13 @@
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
             </svg>
           </button>
-        </div>
-        <a href="login.html" class="dashboard-logout-btn" title="Sign out of member portal">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-            <polyline points="16 17 21 12 16 7" />
-            <line x1="21" y1="12" x2="9" y2="12" />
-          </svg>
-          <span>Sign Out</span>
-        </a>
-      </div>
-    </aside>
-
-    <!-- Sidebar Backdrop for Mobile/Tablet Drawer -->
-    <div class="dashboard-sidebar-backdrop" id="dashboardSidebarBackdrop"></div>
-
-    <!-- MAIN DASHBOARD CONTENT AREA -->
-    <div class="dashboard-main">
-      <!-- Top Bar: Clean header with Hamburger menu on Mobile/Tablet/1024px; View Website, RTL, Theme, and Active Badge removed -->
-      <header class="dashboard-topbar">
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <!-- Hamburger toggle button for Mobile/Tablet/1024px -->
-          <button type="button" class="dashboard-hamburger-btn" id="dashboardSidebarToggle" aria-expanded="false"
-            aria-controls="dashboardSidebar" aria-label="Toggle sidebar menu">
-            <svg class="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2">
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
-          <div>
-            <h1 style="font-size: 1.25rem; margin-bottom: 2px;">Member Dashboard</h1>
-            <p style="font-size: 0.8125rem; color: var(--text-muted); margin: 0;">
-              Active Scheme: <strong>Sahayog Pragati 3 Lakh Group</strong> • Ticket #19
-            </p>
+          <div class="dashboard-profile-pill" title="Priya Subramanian — ID: SHG-MEM-8421">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&h=200&q=85"
+              alt="Priya Subramanian member profile photo" class="dashboard-profile-avatar" width="34" height="34" />
+            <div class="dashboard-profile-meta">
+              <strong>Priya Subramanian</strong>
+              <span>SHG-MEM-8421</span>
+            </div>
           </div>
         </div>
       </header>
@@ -247,8 +247,8 @@
                 <strong>Payment Reminder:</strong> Submit your Month 5 net subscription of ₹8,250 by 12th November to
                 remain eligible to participate in the draw.
               </div>
-              <img src="assets/images/passbook-ledger.svg" alt="Cooperative passbook ledger and stamp" width="800"
-                height="520" style="height: 140px; width: 100%; object-fit: cover; border-radius: var(--radius-sm);" />
+              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=85" alt="Cooperative passbook ledger and financial calculation desk" width="900"
+                height="520" style="height: 150px; width: 100%; object-fit: cover; border-radius: var(--radius-sm);" loading="lazy" />
             </div>
           </div>
         </div>
